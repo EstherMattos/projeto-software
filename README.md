@@ -15,8 +15,12 @@ No VSCode você pode abrir um terminal e rodar:
 
 ### `npm run start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000]
+Roda o app no servidor local em development mode.\
+Abra no navegador: [http://localhost:3000]
+
+Na pasta do arquivo no VSCode ou no terminal, caso estejam faltando arquivos ou dando erros você pode rodar esse comando para instalar as dependências:
+
+### `npm install`
 
 In the project directory, you can run:
 
