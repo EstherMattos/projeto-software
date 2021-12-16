@@ -11,6 +11,13 @@ Brendan Buckley; Esther Mattos; Lucas Scherpel; Fabio Pereira; Vitor Rocha;
 
 ## Available Scripts
 
+No VSCode você pode abrir um terminal e rodar:
+
+### `npm run start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000]
+
 In the project directory, you can run:
 
 ### `npm start`
