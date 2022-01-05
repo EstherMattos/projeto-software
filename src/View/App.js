@@ -29,6 +29,7 @@ function App() {
     <div className="App">
       <header>
         <h1>Teste</h1>
+        <SignOut />
       </header>
 
       <section>
@@ -60,9 +61,16 @@ function Logado() {
     <>
       <p>Logado com sucesso pelo google</p>
       <p>Bem vindo(a) {auth.currentUser.displayName}</p>
+      <img src={auth.currentUser.photoURL}/>
     </>
   )
 
+}
+
+function SignOut() {
+  return auth.currentUser && (
+    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
+  )
 }
 
 export default App;
