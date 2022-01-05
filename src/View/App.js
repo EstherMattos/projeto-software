@@ -59,6 +59,7 @@ function Logado() {
   return (
     <>
       <p>Logado com sucesso pelo google</p>
+      <p>Bem vindo(a) {auth.currentUser.displayName}</p>
     </>
   )
 
