@@ -10,3 +10,11 @@ class categoria_class
     const { nome, imagem } = props.categoria;
     };
 }*/
+
+export class categoria_class {
+    constructor(nome, imagem) {
+      this.nome = nome;
+      this.imagem = imagem;
+    }
+    
+  }
