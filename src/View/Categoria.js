@@ -1,3 +1,5 @@
+//mostra as categorias
+
 const Categoria = (props) => {
 
   console.log(props.categorias);

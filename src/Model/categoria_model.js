@@ -1,3 +1,5 @@
+//nao tem utilidade por enquanto
+
 import { db } from '../firebase'
 
 const MessagingService = {
