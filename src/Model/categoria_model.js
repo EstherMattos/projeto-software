@@ -1,31 +1,17 @@
-//nao tem utilidade por enquanto
+//por favor nao bugue denovo
 
-import { db } from '../firebase'
+import{db} from '../core/conexao';
+import {collection} from 'firebase/firestore';
 
-const MessagingService = {
-  async getCategoria() {
+const Categoria_model = {
+
+    async novaCategoria (nome, imagem) {
     
-    return db
-      .collection('categoria')
-      .then(categorias => {
-        let _categorias = []
-        categorias.forEach(categorias => {
-          _categorias.push(categorias.data())
+        db.collection('categoria').add({
+          nome: nome,
+          imagem: imagem
         })
-        return _categorias
-      })
-  },
-
-  observeMessages (callback) {
-    db.collection('categoria').onSnapshot(callback)
-  },
-
-  async sendMessage (entrada) {
-
-    db.collection('categoria').add({
-      entrada
-    })
-  }
+      },
 }
 
-export default MessagingService
+export default Categoria_model;

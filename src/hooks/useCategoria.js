@@ -23,8 +23,8 @@ function useCategoria () {
         )
       )
         
-      console.log('useEffect');
-      console.log(categoria);
+      //console.log('useEffect');
+      //console.log(categoria);
 
     }
 

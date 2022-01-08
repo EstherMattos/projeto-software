@@ -1,8 +1,10 @@
 //mostra as categorias
 
+//import categoria_model from '../Model/Categoria_model';
+
 const Categoria = (props) => {
 
-  console.log(props.categorias);
+  //console.log(props.categorias);
 
   const categorias = props.categorias;
 
@@ -18,6 +20,8 @@ const Categoria = (props) => {
         );
       })
     }
+    <div>
+    </div>
   </div>
 }
 
