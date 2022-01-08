@@ -1,13 +1,31 @@
+import React from 'react';
+import HomePage from './homepage.component';
+
 import logo from './logo.svg';
+
 import './App.css';
+
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
 
-import { useAuthState} from 'react-firebase-hooks/auth';
-import {useCollectionData} from 'react-firebase-hooks/firestore';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
 
-firebase.initializeApp({
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className='App'>
+        <HomePage />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+/* firebase.initializeApp({
   apiKey: "AIzaSyDQtQtQiIjDUs2oNd0aFYsLT97yrgGYToo",
   authDomain: "wings-d53c0.firebaseapp.com",
   projectId: "wings-d53c0",
@@ -20,8 +38,8 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 function App() {
-  
-  
+
+
 
   const [user] = useAuthState(auth);
 
@@ -71,6 +89,4 @@ function SignOut() {
   return auth.currentUser && (
     <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
   )
-}
-
-export default App;
+} */
