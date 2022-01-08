@@ -1,50 +1,17 @@
 //Testes CRUD
 
 import './App.css';
-import AuthenticationService from '../Model/autenticacao_google';
 import Categoria from './Categoria';
-import { useState, useEffect } from 'react';
-
-import{db} from '../core/conexao';
-import {collection, getDocs} from 'firebase/firestore';
-
-//import { useAuthState} from 'react-firebase-hooks/auth';
-//import {useCollectionData} from 'react-firebase-hooks/firestore';
+import useCategoria from '../hooks/useCategoria';
 
 function App() {
-  
-  const [categoria,setCategoria] = useState([]);
-  const categoriaRef = collection(db,"categoria")
 
+  const categorias = useCategoria();
 
-  useEffect(() => {
+  //logs para teste
+    console.log(categorias);
+    console.log('teste');
 
-    const getCategoria = async () =>{
-      const data = await getDocs(categoriaRef);
-      
-      setCategoria( 
-        data.docs.map ( (doc) => ({
-          ...doc.data(),
-          id: doc.id
-          })
-        )
-      )
-
-      console.log(data);
-      console.log(categoria);
-    }
-
-    getCategoria();
-
-  }, []);
-
-  /*
-  const [logged, setLogged] = useState(AuthenticationService.isLoggedIn())
-  
-  AuthenticationService.observeStatus(user => {
-    setLogged(!!user)
-  })
-  */
   return (
     <div className="App">
       <header>
@@ -52,24 +19,25 @@ function App() {
       </header>
 
       <section>
-        {
-          categoria.map( (cat) => {
-            
-            return (
-              <div>
-                <h1>Categoria: {cat.nome}</h1>
-                <img src={cat.imagem} alt={cat.nome}/>
-              </div>
-            );
-          })
-        }
+        <Categoria categorias={categorias} />
       </section>
 
     </div>
   );
 }
 
-/*
+export default App;
+
+
+/* - - - - - CODIGO ANTIGO - - - - -
+  const [logged, setLogged] = useState(AuthenticationService.isLoggedIn())
+  
+  AuthenticationService.observeStatus(user => {
+    setLogged(!!user)
+  })
+  */
+/* - - - - - CODIGO ANTIGO - - - - -
+
 function SignIn() {
 
   const signInWithGoogle = () => {
@@ -104,5 +72,3 @@ function SignOut() {
   )
 }
 */
-
-export default App;

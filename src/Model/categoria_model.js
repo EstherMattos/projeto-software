@@ -1,46 +1,29 @@
-//tentando fazer a query das categorias e extrair os dados para uma classe
-/*
+import { db } from '../firebase'
 
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
-
-const firestore = firebase.firestore();
-const categoria = firestore.collection('categoria');
-const query = categoria.orderBy('createdAt').limit(25);
-
-const [categoria] = useCollectionData(query, { idField: 'id' });
-
-*/
-import { auth, db, firebase } from '../core/conexao';
-
-const CategoriaModel = {
+const MessagingService = {
   async getCategoria() {
     
     return db
       .collection('categoria')
-      .then(categoria => {
-        let _categoria = []
-        categoria.forEach(categoria => {
-          _categoria.push(categoria.data())
+      .then(categorias => {
+        let _categorias = []
+        categorias.forEach(categorias => {
+          _categorias.push(categorias.data())
         })
-        return _categoria
+        return _categorias
       })
   },
 
-  observeCategoria (callback) {
+  observeMessages (callback) {
     db.collection('categoria').onSnapshot(callback)
   },
 
-  async novaCategoria (categoria) {
-    const user = auth().currentUser
-    //ToDo: checa se o usuario eh admin
+  async sendMessage (entrada) {
 
     db.collection('categoria').add({
-      categoria
-      //categoria.nome,
-      //categoria.imagem
+      entrada
     })
-  },
+  }
 }
 
-export default CategoriaModel
+export default MessagingService

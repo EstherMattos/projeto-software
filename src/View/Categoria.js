@@ -1,16 +1,22 @@
-import CategoriaModel from "../Model/categoria_model";
-import { auth, db, firebase } from '../core/conexao';
+const Categoria = (props) => {
 
-function Categoria () {
+  console.log(props.categorias);
+
+  const categorias = props.categorias;
 
   return <div className="Categoria">
-    <p>categoria</p>
-    <p>
     {
-      CategoriaModel.getCategoria
+      categorias.map( (cat) => {
+        
+        return (
+          <div>
+            <h1>Categoria: {cat.nome}</h1>
+            <img src={cat.imagem} alt={cat.nome}/>
+          </div>
+        );
+      })
     }
-    </p>
   </div>
 }
 
-export default Categoria
+export default Categoria;
