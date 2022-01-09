@@ -1,26 +1,25 @@
 import React from 'react';
-import HomePage from './pages/homepage/homepage.component';
-
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
-import 'firebase/compat/auth';
+import HomePage from './pages/homepage/homepage.component';
 
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { useCollectionData } from 'react-firebase-hooks/firestore';
+const HatsPage = () => (
+  <div className="hats">
+    <h1>HATS PAGE</h1>
+  </div>
+);
 
-
-class App extends React.Component {
-  render() {
-    return (
-      <div className='App'>
-        <HomePage />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <Routes>
+        <Route exact path='/' element={<HomePage />} />
+        <Route exact path='/hats' element={<HatsPage />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
