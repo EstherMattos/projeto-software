@@ -1,4 +1,5 @@
-//por favor nao bugue denovo
+// Create feito, o Read está junto do hook 'useCategoria' 
+// ToDo: update e delete
 
 import{db} from '../core/conexao';
 import {collection} from 'firebase/firestore';

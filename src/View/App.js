@@ -1,23 +1,18 @@
-//Testes CRUD
+// chama a homepage
 
-import Categoria_controle from '../Controller/Categoria_controle';
+import React from 'react';
+import HomePage from './pages/homepage/homepage.component';
+
 import './App.css';
 
-function App() {
-
-
-  return (
-    <div className="App">
-      <header>
-        <h1>Teste</h1>
-      </header>
-
-      <section>
-        <Categoria_controle />
-      </section>
-
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className='App'>
+        <HomePage />
+      </div>
+    );
+  }
 }
 
 export default App;
