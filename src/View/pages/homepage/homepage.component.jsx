@@ -1,7 +1,7 @@
 //agora chama o controle, que por sua vez vai chamar o diretorio
 
 import React from 'react';
-import Categoria_controle from '../../../Controller/Categoria_controle';
+import Categoria_controle from '../../../Controller/Categoria_control';
 
 import './homepage.styles.scss';
 
