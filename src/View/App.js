@@ -1,13 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+
 import './App.css';
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/firestore';
-import 'firebase/compat/auth';
 
-import { useAuthState} from 'react-firebase-hooks/auth';
-import {useCollectionData} from 'react-firebase-hooks/firestore';
+import HomePage from './pages/homepage/homepage.component';
+import ShopPage from './pages/shop/shop.component';
+import Header from './components/header/header.component.jsx';
+import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 
-firebase.initializeApp({
+function App() {
+  return (
+    <div>
+      <Header />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/shop' element={<ShopPage />} />
+        <Route path='/signin' element={<SignInAndSignUpPage />} />
+      </Routes>
+    </div>
+  );
+}
+
+export default App;
+
+/* firebase.initializeApp({
   apiKey: "AIzaSyDQtQtQiIjDUs2oNd0aFYsLT97yrgGYToo",
   authDomain: "wings-d53c0.firebaseapp.com",
   projectId: "wings-d53c0",
@@ -20,8 +36,8 @@ const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 function App() {
-  
-  
+
+
 
   const [user] = useAuthState(auth);
 
@@ -71,6 +87,4 @@ function SignOut() {
   return auth.currentUser && (
     <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
   )
-}
-
-export default App;
+} */
