@@ -1,11 +1,11 @@
 /*chama o hook, usa as funcoes do model e chama a view passando o props
 vai precisar dos IDS para as funcoes, talvez pegar do key, deixar hidden no html
  ou passar como props tambem
-*///ToDo: usar hooks para atualizar automaticamente com as mudanças
+*/
 
 import useCategoria from '../hooks/useCategoria';
 
-import Categoria_model from '../Model/Categoria_modelo';
+import Categoria_model from '../Model/Categoria_model';
 import Directory from '../View/components/directory/directory.component';
 
 const Categoria_controle = () => {
@@ -42,18 +42,3 @@ const Categoria_controle = () => {
 }
 
 export default Categoria_controle;
-
-/*// forms de exemplo para teste
-
-<form onSubmit={updateSubmit}>
-    <input type="text" name="nome" placeholder="nome" />
-    <input type="text" name="imagem" placeholder="imagemURL" />
-    <input type="hidden" name='id' value={id} />
-    <button type="submit">update</button>
-</form>
-
-<form onSubmit={deleteSubmit}>
-    <input type="hidden" name='id' value={id} />
-    <button type="submit">DELETE</button>
-</form>
-*/
