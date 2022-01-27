@@ -1,12 +1,12 @@
 import React from 'react';
+import Categoria_controle from '../../../Controller/Categoria_control';
 
-import Directory from '../../components/directory/directory.component';
 
 import './homepage.styles.scss';
 
 const HomePage = () => (
     <div className='homepage'>
-        <Directory />
+        <Categoria_controle/>
     </div>
 );
 
