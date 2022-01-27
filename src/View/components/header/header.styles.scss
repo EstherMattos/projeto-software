@@ -1,0 +1,41 @@
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 0, 0,0.3);
+  
+    .logo-container {
+      height: 70%;
+      width: 70px;
+      margin-top: -10px;
+      margin-left: 20px;
+      padding: 5px;
+    }
+
+    .logo{
+      width: 70px;
+      height: 70px;
+      padding: 5px;
+    }
+  
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-weight: bold;
+
+      .option:hover{
+        color: white;
+      }
+  
+      .option {
+        padding: 10px 15px;
+        margin-right: 20px;
+      }
+    }
+  }

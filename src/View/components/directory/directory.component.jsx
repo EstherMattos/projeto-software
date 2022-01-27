@@ -1,5 +1,3 @@
-// tirei as categorias e o state, agora estao sendo passadas por props vindas do DB
-
 import React from 'react';
 
 import MenuItem from '../menu-item/menu-item.component';
