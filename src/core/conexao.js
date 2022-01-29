@@ -1,3 +1,10 @@
+// "FUNCIONAL"
+
+/*Esta classe cria uma conexão com o DB usando as credenciais, num projeto real essas 
+credenciais seriam escondidas ou criptografadas. A conexão está em core/ pois é 
+essencial para o funcionamento, e é utilizada por diversas classes. 
+*/
+
 //conecta ao db
 //uso o /compat para evitar erros de compatibilidade
 

@@ -1,8 +1,10 @@
-/*chama o hook, usa as funcoes do model e chama a view passando o props
-vai precisar dos IDS para as funcoes, talvez pegar do key, deixar hidden no html
- ou passar como props tambem
-*/
+//"FUNCIONAL"
 
+/*Categoria_controle é responsável por chamar a categoria_model para fazer operações
+CRUD e outras necessárias para os casos de uso. Além disso se comunica com as views
+que requisitam essas informações relacionadas a categoria ou recebe das views os
+formularios para alteração dos dados persistentes.
+*/
 import useCategoria from '../hooks/useCategoria';
 
 import Categoria_model from '../Model/Categoria_model';
@@ -10,29 +12,31 @@ import Directory from '../View/components/directory/directory.component';
 
 const Categoria_controle = () => {
 
+    //READ
     const categorias = useCategoria();
 
-    //pega os dados de um form e cria uma categoria nova
+    //CREATE
     const handleSubmit = (event) => {
         const formData = new FormData(event.currentTarget);
         event.preventDefault();
         Categoria_model.novaCategoria(formData.get('nome'),formData.get('imagem'));
     };
 
-    //copiei porcamente para o update
+    //UPDATE
     const updateSubmit = (event) => {
         const formData = new FormData(event.currentTarget);
         event.preventDefault();
         Categoria_model.updateCategoria(formData.get('nome'),formData.get('imagem'),formData.get('id'));
     };
     
-    //copiei mais porcamente ainda para o delete
+    //DELETE
     const deleteSubmit = (event) => {
         const formData = new FormData(event.currentTarget);
         event.preventDefault();
         Categoria_model.deleteCategoria(formData.get('id'));
     };
 
+    //VIEW
     return (
         <div>
             <Directory categorias = {categorias} />

@@ -1,4 +1,9 @@
-//hook para ler as categorias do DB, retorna um array com elas
+// "FUNCIONAL"
+
+/*Hook react usado para ler as categorias do DB e atualizar mudanças em tempo real. Ele
+é chamado por categoria_controle para o READ e implementa o padrão de projeto Observador
+da GOF.
+*/
 
 import { useState, useEffect } from 'react';
 import{db} from '../core/conexao';
@@ -22,9 +27,6 @@ function useCategoria () {
           })
         )
       )
-        
-      //console.log('useEffect');
-      //console.log(categoria);
 
     }
 
