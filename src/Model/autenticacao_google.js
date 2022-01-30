@@ -1,3 +1,8 @@
+// "FUNCIONAL"
+
+/*Usa o autenticador do google para autenticar usuarios do sistema e
+gerar um token. Essa classe é usada no login de usuários.
+*/
 import { auth } from '../core/conexao'
 
 const AuthenticationService = {

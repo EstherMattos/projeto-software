@@ -1,10 +1,12 @@
-/* Create feito, o Read está junto do hook 'useCategoria'
-caso feito aqui ele retorna uma "promise" e provavelmente teria que usar o hook
-de qualquer forma
+// "FUNCIONAL"
+
+/*Usa a conexão para acessar o DB e realizar operações como CRUD e retorna a
+informação em formato json. A operação de Read não é feita aqui pois retorna
+uma promessa, então é necessário o uso de Hooks, que também garantem a
+atualização em tempo real.
  */
 
 import{db} from '../core/conexao';
-import {collection, getDocs} from 'firebase/firestore';
 
 const Categoria_model = {
 
