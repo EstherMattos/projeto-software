@@ -2,6 +2,10 @@ import React from 'react';
 
 import './collection-item.styles.scss';
 
+//"FUNCIONAL"
+
+//Este componente serve para mostrar um produto na homepage
+
 const CollectionItem = ({ id, name, price, imageUrl }) => (
     <div className='collection-item'>
         <div

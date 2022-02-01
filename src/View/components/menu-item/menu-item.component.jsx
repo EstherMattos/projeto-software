@@ -2,6 +2,10 @@ import React from 'react';
 
 import './menu-item.styles.scss';
 
+//"FUNCIONAL"
+
+//Este componente carrega a estrutura do menu inicial de produtos da homepage
+
 const MenuItem = ({ title, imageUrl }) => (
     <div className={`menu-item`}>
         <div

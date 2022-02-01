@@ -4,6 +4,9 @@ import MenuItem from '../menu-item/menu-item.component';
 
 import './directory.styles.scss';
 
+//"FUNCIONAL"
+
+//Este componente busca os produtos do Banco de Dados
 class Directory extends React.Component {
     constructor() {
         super();

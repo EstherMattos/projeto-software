@@ -5,6 +5,10 @@ import { ReactComponent as Logo } from '../../assets/Wings2.svg';
 
 import './header.styles.scss';
 
+//"FUNCIONAL"
+
+//Este componente é responsavel por carregar o cabeçalho geral
+
 const Header = ({ currentUser }) => (
     <div className='header'>
         <Link className='logo-container' to='/'>

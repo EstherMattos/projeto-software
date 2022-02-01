@@ -5,6 +5,9 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import './sign-in.styles.scss';
 
+//"DUMMY"
+
+//Este componente é responsavel pelo Sign in
 class SignIn extends React.Component {
     constructor(props) {
         super(props);

@@ -4,6 +4,10 @@ import CollectionItem from '../collection-item/collection-item.component';
 
 import './collection-preview.styles.scss';
 
+//"FUNCIONAL"
+
+//Este componente serve para carregar os produtos da collection-item na homepage
+
 const CollectionPreview = ({ title, items }) => (
     <div className='collection-preview'>
         <h1 className='title'>{title.toUpperCase()}</h1>
