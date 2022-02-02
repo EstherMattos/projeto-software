@@ -9,7 +9,9 @@ atualização em tempo real.
 import{db} from '../core/conexao';
 
 const Categoria_model = {
-
+    
+    // Cria categoria no banco
+    
     async novaCategoria (nome, imagem) {
     
         db.collection('categoria').add({
@@ -18,11 +20,15 @@ const Categoria_model = {
         })
       },
 
+    // Altera categoria no banco
+    
     async updateCategoria ( nome, imagem, id) {
 
         db.collection("categoria").doc(id).update({nome: nome,imagem: imagem});
     },
 
+    // Deleta categoria do banco
+    
     async deleteCategoria (id) {
 
         db.collection("categoria").doc(id).delete();
