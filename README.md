@@ -1,4 +1,12 @@
-# firebase_CRUD
+# Links externos
+
+### link da documentação:
+https://docs.google.com/document/d/1zvaH4wOfDNB-s8EYenwmSbtMhBpO581XX2WpUzbXP8w/edit?usp=sharing
+
+### link do vídeo:
+https://drive.google.com/file/d/1TDxT7ANqSiqqKTFhFGXcb-xUVrbK6MYF/view?usp=sharing
+
+## firebase_CRUD
 
 Trabalho prático da matéria Projeto de Software
 
@@ -8,10 +16,6 @@ A Wings é um e-commerce unissex virtual que vende diversos tipo de roupa.
 
 ### Grupo:
 Brendan Buckley; Lucas Scherpel; Nicolas Atmatzides; Vitor Rocha; André Lopes;
-
-link da documentação: https://docs.google.com/document/d/1zvaH4wOfDNB-s8EYenwmSbtMhBpO581XX2WpUzbXP8w/edit?usp=sharing
-
-link do vídeo: https://drive.google.com/file/d/1TDxT7ANqSiqqKTFhFGXcb-xUVrbK6MYF/view?usp=sharing
 
 ## Available Scripts
 
