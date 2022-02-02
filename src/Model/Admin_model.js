@@ -9,7 +9,9 @@ atualização em tempo real.
 import{db} from '../core/conexao';
 
 const Admin_model = {
-
+    
+    // Cria administrador no banco
+    
     async novoAdmin (nome, email, senha) {
     
         db.collection('admin').add({
@@ -18,12 +20,16 @@ const Admin_model = {
           senha: senha
         })
       },
-
+    
+    // Altera administrador no banco
+    
     async updateAdmin ( nome, imagem, id) {
 
         db.collection("admin").doc(id).update({nome: nome, email: email, senha: senha});
     },
-
+    
+    //Apaga admin do banco
+    
     async deleteAdmin (id) {
 
         db.collection("admin").doc(id).delete();
