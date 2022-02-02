@@ -9,7 +9,9 @@ atualização em tempo real.
 import{db} from '../core/conexao';
 
 const Produto_model = {
-
+    
+    //Insere produto no banco
+    
     async novoProduto (nome, imagem, preco, categoria) {
     
         db.collection('produto').add({
@@ -17,12 +19,16 @@ const Produto_model = {
           imagem: imagem
         })
       },
-
+    
+    //Altera produto no banco
+    
     async updateProduto ( nome, imagem, id) {
 
         db.collection("produto").doc(id).update({nome: nome,imagem: imagem});
     },
-
+    
+    //Deleta produto do banco
+    
     async deleteProduto (id) {
 
         db.collection("produto").doc(id).delete();
