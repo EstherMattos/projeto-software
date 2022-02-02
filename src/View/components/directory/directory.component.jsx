@@ -17,7 +17,7 @@ class Directory extends React.Component {
             <div className='directory-menu'>
                 {//os nomes das variaveis tambem sao um pouco diferentes
                 this.props.categorias.map(({ nome, imagem }) => (
-                    <MenuItem title={nome} imageUrl={imagem} />
+                    <MenuItem title={nome} imageUrl={imagem} key={nome} />
                 ))}
             </div>
         );
