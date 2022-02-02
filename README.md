@@ -9,6 +9,10 @@ A Wings é um e-commerce unissex virtual que vende diversos tipo de roupa.
 ### Grupo:
 Brendan Buckley; Esther Mattos; Lucas Scherpel; Fabio Pereira; Vitor Rocha; André Lopes;
 
+link da documentação: https://docs.google.com/document/d/1zvaH4wOfDNB-s8EYenwmSbtMhBpO581XX2WpUzbXP8w/edit?usp=sharing
+
+link do vídeo: https://drive.google.com/file/d/1TDxT7ANqSiqqKTFhFGXcb-xUVrbK6MYF/view?usp=sharing
+
 ## Available Scripts
 
 No VSCode você pode abrir um terminal e rodar:
