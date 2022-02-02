@@ -7,7 +7,7 @@ Trabalho prático da matéria Projeto de Software
 A Wings é um e-commerce unissex virtual que vende diversos tipo de roupa.
 
 ### Grupo:
-Brendan Buckley; Esther Mattos; Lucas Scherpel; Fabio Pereira; Vitor Rocha; André Lopes;
+Brendan Buckley; Lucas Scherpel; Nicolas Atmatzides; Vitor Rocha; André Lopes;
 
 link da documentação: https://docs.google.com/document/d/1zvaH4wOfDNB-s8EYenwmSbtMhBpO581XX2WpUzbXP8w/edit?usp=sharing
 
