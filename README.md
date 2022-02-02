@@ -6,7 +6,7 @@ https://docs.google.com/document/d/1zvaH4wOfDNB-s8EYenwmSbtMhBpO581XX2WpUzbXP8w/
 ### link do vídeo:
 https://drive.google.com/file/d/1TDxT7ANqSiqqKTFhFGXcb-xUVrbK6MYF/view?usp=sharing
 
-## firebase_CRUD
+## Main
 
 Trabalho prático da matéria Projeto de Software
 
