@@ -1,7 +1,7 @@
 # Links externos
 
 ### link da documentação:
-https://docs.google.com/document/d/1zvaH4wOfDNB-s8EYenwmSbtMhBpO581XX2WpUzbXP8w/edit?usp=sharing
+https://docs.google.com/document/d/1r5_gwfGZw36eggiA7WVkU9boLXWQ85eYjoq_d71Ow-c/edit?usp=sharing
 
 ### link do vídeo:
 https://drive.google.com/file/d/1TDxT7ANqSiqqKTFhFGXcb-xUVrbK6MYF/view?usp=sharing
