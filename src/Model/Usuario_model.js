@@ -10,6 +10,8 @@ import{db} from '../core/conexao';
 
 const Usuario_model = {
 
+    //Cadastra Usuario no banco
+    
     async novoUsuario (nome, email, senha) {
     
         db.collection('usuario').add({
@@ -18,12 +20,16 @@ const Usuario_model = {
           senha: senha
         })
       },
-
+    
+    //Atualiza Usuario no banco
+    
     async updateUsuario ( nome, email, senha, id) {
 
         db.collection("Usuario").doc(id).update({nome: nome, email: email, senha: senha});
     },
-
+    
+    //Apaga Usuario do banco
+    
     async deleteUsuario (id) {
 
         db.collection("usuario").doc(id).delete();
